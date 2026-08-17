@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>Ore Academy - Home</title>
+  
+  <style>
+    /* === General Layout === */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  background: #f9f9fb;
+  color: #333;
+  display: flex;
+}
+
+/* Sidebar */
+#sidebar {
+  width: 260px;
+  background: #1e2a38;
+  color: #fff;
+  padding: 20px;
+  min-height: 100vh;
+  box-shadow: 2px 0 6px rgba(0,0,0,0.1);
+  position: fixed;
+}
+
+#sidebar h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  padding-bottom: 5px;
+}
+
+#sidebar .nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#sidebar .nav li {
+  margin: 10px 0;
+}
+
+#sidebar .nav a {
+  text-decoration: none;
+  color: #ddd;
+  font-weight: 500;
+  display: block;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background 0.3s, color 0.3s;
+}
+
+#sidebar .nav a:hover,
+#sidebar .nav a.active {
+  background: #3a506b;
+  color: #fff;
+}
+
+#sidebar p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Main Content */
+#main {
+  margin-left: 280px;
+  flex: 1;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(30,42,56,0.8), rgba(30,42,56,0.8)), url('assets/images/campus.jpg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.hero .button {
+  background: #3a506b;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.hero .button:hover {
+  background: #5c7ea5;
+}
+
+/* Section Styling */
+.section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+.section h2 {
+  color: #1e2a38;
+  margin-bottom: 15px;
+}
+.section p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Highlights Grid */
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+.highlight-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+.highlight-card:hover {
+  transform: translateY(-5px);
+}
+.highlight-card h3 {
+  margin-top: 0;
+  color: #3a506b;
+}
+.highlight-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+.highlight-card .button {
+  display: inline-block;
+  margin-top: 10px;
+  background: #3a506b;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+.highlight-card .button:hover {
+  background: #5c7ea5;
+}
+
+/* Footer */
+footer {
+  background: #1e2a38;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #sidebar {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    box-shadow: none;
+  }
+  #main {
+    margin-left: 0;
+  }
+  .hero {
+    padding: 60px 20px;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .highlights {
+    grid-template-columns: 1fr;
+  }
+}
+
+  </style>
+</head>
+<body class="left-sidebar is-preload">
+
+<!-- Sidebar -->
+<div id="sidebar">
+  <section>
+    <h2>Navigation</h2>
+    <ul class="nav">
+      <li><a href="index.html" class="active">🏠 Home</a></li>
+      <li><a href="about.html">📖 About Us</a></li>
+      <li><a href="courses.html">🎓 Courses</a></li>
+      <li><a href="admissions.html">📝 Admissions</a></li>
+	  <li><a href="contact.html">📞 Contact</a></li>
+     
+    </ul>
+  </section>
+
+  <section>
+    <h2>Quick Info</h2>
+    <p><strong>Ore Academy</strong><br>
+    Empowering learners through innovation.</p>
+    <p>Email: info@oreacademy.edu<br>
+    Phone: +234-800-123-4567</p>
+  </section>
+</div>
+
+<!-- Main Content -->
+<div id="main">
+  <!-- Hero Banner -->
+  <div class="hero">
+    <h1>Welcome to Ore Academy</h1>
+    <p>Empowering learners through innovation, creativity, and excellence.</p>
+    <a href="admissions.html" class="button">Apply Now 📝</a>
+  </div>
+
+  <!-- Highlights Section -->
+  <div class="section">
+    <h2>Explore Ore Academy</h2>
+    <div class="highlights">
+      <div class="highlight-card">
+        <h3>📖 About Us</h3>
+        <p>Discover our mission, vision, and values that drive excellence in education.</p>
+        <a href="about.html" class="button">Learn More</a>
+      </div>
+      <div class="highlight-card">
+        <h3>🎓 Courses</h3>
+        <p>Browse our diverse range of programs designed to prepare you for the future.</p>
+        <a href="courses.html" class="button">View Courses</a>
+      </div>
+      <div class="highlight-card">
+        <h3>📝 Admissions</h3>
+        <p>Join our community of learners. Find out how to apply and start your journey.</p>
+        <a href="admissions.html" class="button">Get Started</a>
+      </div>
+      <div class="highlight-card">
+        <h3>📞 Contact</h3>
+        <p>Have questions? Reach out to us for support and guidance.</p>
+        <a href="contact.html" class="button">Contact Us</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Ore Academy. All rights reserved.</p>
+  </footer>
+</div>
+
+</body>
+</html>

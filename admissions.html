@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>Admissions - Ore Academy</title>
+  <style>
+  /* === General Page Layout === */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  background: #f9f9fb;
+  color: #333;
+  display: flex;
+}
+
+/* Sidebar */
+#sidebar {
+  width: 260px;
+  background: #1e2a38;
+  color: #fff;
+  padding: 20px;
+  min-height: 100vh;
+  box-shadow: 2px 0 6px rgba(0,0,0,0.1);
+  position: fixed;
+}
+
+#sidebar h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  padding-bottom: 5px;
+}
+
+#sidebar .nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#sidebar .nav li {
+  margin: 10px 0;
+}
+
+#sidebar .nav a {
+  text-decoration: none;
+  color: #ddd;
+  font-weight: 500;
+  display: block;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background 0.3s, color 0.3s;
+}
+
+#sidebar .nav a:hover,
+#sidebar .nav a.active {
+  background: #3a506b;
+  color: #fff;
+}
+
+/* Sidebar text */
+#sidebar p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Search box in sidebar */
+#sidebar input[type="text"] {
+  width: calc(100% - 40px);
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+#sidebar button {
+  background: #3a506b;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#sidebar button:hover {
+  background: #5c7ea5;
+}
+
+/* Main Content */
+#main {
+  margin-left: 280px;
+  padding: 40px;
+  max-width: 900px;
+}
+
+#main h1 {
+  font-size: 2rem;
+  color: #1e2a38;
+  margin-bottom: 20px;
+}
+
+#main h2 {
+  font-size: 1.4rem;
+  margin-top: 25px;
+  color: #3a506b;
+}
+
+#main p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Lists */
+#main ul, #main ol {
+  margin: 10px 0 20px 20px;
+  padding: 0;
+}
+
+#main ul li, #main ol li {
+  background: #eef2f7;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+/* === Admissions Form Styling (extended) === */
+form {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-top: 20px;
+}
+
+fieldset {
+  border: 1px solid #dce3eb;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+legend {
+  font-weight: bold;
+  color: #1e2a38;
+  padding: 0 8px;
+}
+
+label {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="file"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccd6e0;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+select:focus {
+  border-color: #3a506b;
+  outline: none;
+}
+
+input[type="file"] {
+  padding: 5px;
+}
+
+button[type="submit"],
+.button.primary {
+  background: #3a506b;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button[type="submit"]:hover,
+.button.primary:hover {
+  background: #5c7ea5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #sidebar {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    box-shadow: none;
+  }
+  #main {
+    margin-left: 0;
+    padding: 20px;
+  }
+  form {
+    padding: 15px;
+  }
+  input, select, button {
+    font-size: 0.9rem;
+  }
+}
+
+</style>
+</head>
+<body class="left-sidebar is-preload">
+
+<!-- Sidebar Navigation -->
+<div id="sidebar">
+  <section>
+    <h2>Navigation</h2>
+    <ul class="nav">
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="about.html">📖 About Us</a></li>
+      <li><a href="courses.html">🎓 Courses</a></li>
+      <li><a href="admissions.html" class="active">📝 Admissions</a></li>
+      <li><a href="contact.html">📞 Contact</a></li>
+    </ul>
+  </section>
+
+  <!-- Announcements -->
+  <section>
+    <h2>Announcements</h2>
+    <p>📢 Enrollment for Fall 2026 is now open!</p>
+    <p>Upcoming event: Orientation Week starts Sept 5.</p>
+  </section>
+
+  <!-- Quick Info -->
+  <section>
+    <h2>Quick Info</h2>
+    <p><strong>Ore Academy</strong><br>
+    Empowering learners through innovation.</p>
+    <p>Email: info@oreacademy.edu<br>
+    Phone: +234-800-123-4567</p>
+  </section>
+
+  <!-- Search -->
+  <section>
+    <h2>Search</h2>
+    <form action="search.html" method="get">
+      <input type="text" name="q" placeholder="Search courses..." />
+      <button type="submit">🔍</button>
+    </form>
+  </section>
+</div>
+
+<!-- Main Content -->
+<div id="main">
+  <section>
+    <!-- Page Header -->
+    <header class="major">
+      <h1>Admissions</h1>
+    </header>
+
+    <!-- Introductory Text -->
+    <p>
+      Welcome to the <strong>Ore Academy Admissions Office</strong>. 
+      Please complete the form below to apply for admission. 
+      Fields are organized so you can easily edit or swap them as needed.
+    </p>
+
+    <!-- Admissions Form -->
+    <form action="submit_admission.php" method="post">
+      
+      <!-- Personal Information -->
+      <fieldset>
+        <legend>👤 Personal Information</legend>
+        
+        <!-- Full Name -->
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br><br>
+        
+        <!-- Email -->
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+        
+        <!-- Phone -->
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="+234-800-123-4567" required><br><br>
+        
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+      </fieldset>
+
+      <!-- Academic Information -->
+      <fieldset>
+        <legend>📚 Academic Information</legend>
+        
+        <!-- Previous School -->
+        <label for="school">Previous School:</label><br>
+        <input type="text" id="school" name="school" placeholder="Enter your last school attended" required><br><br>
+        
+        <!-- Intended Course -->
+        <label for="course">Intended Course of Study:</label><br>
+        <select id="course" name="course" required>
+          <option value="">-- Select a course --</option>
+          <option value="computer_science">Computer Science</option>
+          <option value="business_admin">Business Administration</option>
+          <option value="engineering">Engineering</option>
+          <option value="arts">Arts & Humanities</option>
+        </select><br><br>
+        
+        <!-- GPA -->
+        <label for="gpa">Previous GPA (if applicable):</label><br>
+        <input type="text" id="gpa" name="gpa" placeholder="e.g., 3.5"><br><br>
+      </fieldset>
+
+      <!-- Supporting Documents -->
+      <fieldset>
+        <legend>📄 Supporting Documents</legend>
+        
+        <!-- Transcript Upload -->
+        <label for="transcript">Upload Transcript:</label><br>
+        <input type="file" id="transcript" name="transcript" accept=".pdf,.doc,.docx"><br><br>
+        
+        <!-- Recommendation Letters -->
+        <label for="recommendation">Upload Recommendation Letter(s):</label><br>
+        <input type="file" id="recommendation" name="recommendation" accept=".pdf,.doc,.docx" multiple><br><br>
+      </fieldset>
+
+      <!-- Submit Section -->
+      <fieldset>
+        <legend>✅ Submit Application</legend>
+        <p>Ensure all details are correct before submitting.</p>
+        <button type="submit" class="button primary">Submit Application 📝</button>
+      </fieldset>
+    </form>
+  </section>
+</div>
+
+</body>
+</html>

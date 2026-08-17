@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>About Us - Ore Academy</title>
+  <style>
+    /* General Page Styling */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  background: #f9f9fb;
+  color: #333;
+  display: flex;
+}
+
+/* Sidebar */
+#sidebar {
+  width: 260px;
+  background: #1e2a38;
+  color: #fff;
+  padding: 20px;
+  min-height: 100vh;
+  box-shadow: 2px 0 6px rgba(0,0,0,0.1);
+  position: fixed;
+}
+
+#sidebar h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  padding-bottom: 5px;
+}
+
+#sidebar .nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#sidebar .nav li {
+  margin: 10px 0;
+}
+
+#sidebar .nav a {
+  text-decoration: none;
+  color: #ddd;
+  font-weight: 500;
+  display: block;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background 0.3s, color 0.3s;
+}
+
+#sidebar .nav a:hover,
+#sidebar .nav a.active {
+  background: #3a506b;
+  color: #fff;
+}
+
+/* Sidebar Sections */
+#sidebar section {
+  margin-bottom: 20px;
+}
+
+#sidebar p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Main Content */
+#main {
+  margin-left: 280px;
+  padding: 40px;
+  max-width: 900px;
+}
+
+#main h1 {
+  font-size: 2rem;
+  color: #1e2a38;
+  margin-bottom: 20px;
+}
+
+#main h2 {
+  font-size: 1.4rem;
+  margin-top: 25px;
+  color: #3a506b;
+}
+
+#main p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+#main ul {
+  list-style: none;
+  padding: 0;
+}
+
+#main ul li {
+  background: #eef2f7;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+/* Search Box */
+#sidebar input[type="text"] {
+  width: calc(100% - 40px);
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+#sidebar button {
+  background: #3a506b;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#sidebar button:hover {
+  background: #5c7ea5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #sidebar {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    box-shadow: none;
+  }
+  #main {
+    margin-left: 0;
+    padding: 20px;
+  }
+}
+  </style>
+
+</head>
+<body class="left-sidebar is-preload">
+
+<div id="sidebar">
+  <section>
+    <h2>Navigation</h2>
+    <ul class="nav">
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="about.html" class="active">📖 About Us</a></li>
+      <li><a href="courses.html">🎓 Courses</a></li>
+      <li><a href="admissions.html">📝 Admissions</a></li>
+      <li><a href="contact.html">📞 Contact</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Announcements</h2>
+    <p>📢 Enrollment for Fall 2026 is now open!</p>
+    <p>Upcoming event: Orientation Week starts Sept 5.</p>
+  </section>
+
+  <section>
+    <h2>Quick Info</h2>
+    <p><strong>Ore Academy</strong><br>
+    Empowering learners through innovation.</p>
+    <p>Email: info@oreacademy.edu<br>
+    Phone: +234-800-123-4567</p>
+  </section>
+
+  <section>
+    <h2>Search</h2>
+    <form action="search.html" method="get">
+      <input type="text" name="q" placeholder="Search courses..." />
+      <button type="submit">🔍</button>
+    </form>
+  </section>
+</div>
+
+<!-- Main Content -->
+<div id="main">
+  <section>
+    <header class="major">
+      <h1>About Us</h1>
+    </header>
+    <p>
+      At <strong>Ore Academy</strong>, we believe education is the key to unlocking human potential. 
+      Founded on the principles of innovation, inclusivity, and excellence, our institution is dedicated 
+      to nurturing learners who will shape the future.
+    </p>
+
+    <h2>Our Mission</h2>
+    <p>
+      To empower students with knowledge, skills, and creativity that prepare them for success in a rapidly changing world.
+    </p>
+
+    <h2>Our Vision</h2>
+    <p>
+      To be a leading academy recognized globally for transformative education and groundbreaking research.
+    </p>
+
+    <h2>Our Values</h2>
+    <ul>
+      <li>🌍 Inclusivity – embracing diversity and fostering belonging.</li>
+      <li>💡 Innovation – encouraging curiosity and creative problem-solving.</li>
+      <li>📚 Excellence – striving for the highest standards in teaching and learning.</li>
+      <li>🤝 Community – building strong connections among students, staff, and society.</li>
+    </ul>
+  </section>
+</div>
+
+</body>
+</html>

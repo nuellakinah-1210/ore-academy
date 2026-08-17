@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>Contact Us - Ore Academy</title>
+  <style>
+    /* General Layout */
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      background: #f9f9fb;
+      color: #333;
+      display: flex;
+    }
+
+    /* Sidebar */
+    #sidebar {
+      width: 260px;
+      background: #1e2a38;
+      color: #fff;
+      padding: 20px;
+      min-height: 100vh;
+      box-shadow: 2px 0 6px rgba(0,0,0,0.1);
+      position: fixed;
+    }
+    #sidebar h2 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+      padding-bottom: 5px;
+    }
+    #sidebar .nav {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    #sidebar .nav li {
+      margin: 10px 0;
+    }
+    #sidebar .nav a {
+      text-decoration: none;
+      color: #ddd;
+      font-weight: 500;
+      display: block;
+      padding: 8px;
+      border-radius: 4px;
+      transition: background 0.3s, color 0.3s;
+    }
+    #sidebar .nav a:hover,
+    #sidebar .nav a.active {
+      background: #3a506b;
+      color: #fff;
+    }
+
+    /* Main Content */
+    #main {
+      margin-left: 280px;
+      padding: 40px;
+      max-width: 900px;
+    }
+    #main h1 {
+      font-size: 2rem;
+      color: #1e2a38;
+      margin-bottom: 20px;
+    }
+    #main p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    /* Contact Form */
+    form {
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-top: 20px;
+    }
+    label {
+      font-weight: 500;
+      display: block;
+      margin-bottom: 6px;
+      color: #333;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccd6e0;
+      border-radius: 4px;
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+      transition: border-color 0.3s;
+    }
+    input:focus,
+    textarea:focus {
+      border-color: #3a506b;
+      outline: none;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+    button {
+      background: #3a506b;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #5c7ea5;
+    }
+
+    /* Footer */
+    footer {
+      background: #1e2a38;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      #sidebar {
+        position: relative;
+        width: 100%;
+        min-height: auto;
+        box-shadow: none;
+      }
+      #main {
+        margin-left: 0;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body class="left-sidebar is-preload">
+
+<!-- Sidebar -->
+<div id="sidebar">
+  <section>
+    <h2>Navigation</h2>
+    <ul class="nav">
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="about.html">📖 About Us</a></li>
+      <li><a href="courses.html">🎓 Courses</a></li>
+      <li><a href="admissions.html">📝 Admissions</a></li>
+      <li><a href="contact.html" class="active">📞 Contact</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Quick Info</h2>
+    <p><strong>Ore Academy</strong><br>
+    Empowering learners through innovation.</p>
+    <p>Email: info@oreacademy.edu<br>
+    Phone: +234-800-123-4567</p>
+  </section>
+</div>
+
+<!-- Main Content -->
+<div id="main">
+  <section>
+    <header class="major">
+      <h1>Contact Us</h1>
+    </header>
+    <p>
+      We’d love to hear from you! Please fill out the form below to get in touch with our team.
+    </p>
+
+    <!-- Contact Form -->
+    <form action="mailto:info@oreacademy.edu" method="post" enctype="text/plain">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" placeholder="Message subject" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Send Message 📧</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Ore Academy. All rights reserved.</p>
+  </footer>
+</div>
+
+</body>
+</html>

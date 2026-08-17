@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>Courses - Ore Academy</title>
+  
+  <style>
+    /* General Layout */
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      background: #f9f9fb;
+      color: #333;
+      display: flex;
+    }
+
+    /* Main Content */
+    #main {
+      flex: 1;
+      padding: 40px;
+      max-width: 900px;
+    }
+
+    #main h1 {
+      font-size: 2rem;
+      color: #1e2a38;
+      margin-bottom: 20px;
+    }
+
+    #main h2 {
+      font-size: 1.4rem;
+      margin-top: 25px;
+      color: #3a506b;
+    }
+
+    #main p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    /* Course Cards */
+    .course-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .course-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: transform 0.3s;
+    }
+
+    .course-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .course-card h3 {
+      margin-top: 0;
+      color: #1e2a38;
+    }
+
+    .course-card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    /* Right Sidebar */
+    #right-sidebar {
+      width: 260px;
+      background: #1e2a38;
+      color: #fff;
+      padding: 20px;
+      min-height: 100vh;
+      box-shadow: -2px 0 6px rgba(0,0,0,0.1);
+    }
+
+    #right-sidebar h2 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+      padding-bottom: 5px;
+    }
+
+    #right-sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #right-sidebar ul li {
+      margin: 8px 0;
+    }
+
+    #right-sidebar a {
+      text-decoration: none;
+      color: #ddd;
+      transition: color 0.3s;
+    }
+
+    #right-sidebar a:hover {
+      color: #fff;
+    }
+
+    #right-sidebar p {
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+      #right-sidebar {
+        width: 100%;
+        min-height: auto;
+        box-shadow: none;
+      }
+      #main {
+        max-width: 100%;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body class="right-sidebar is-preload">
+
+<!-- Main Content -->
+<div id="main">
+  <section>
+    <header class="major">
+      <h1>Our Courses</h1>
+    </header>
+    <p>
+      At <strong>Ore Academy</strong>, we offer a wide range of courses designed to empower learners 
+      with practical skills and knowledge. Explore our featured programs below.
+    </p>
+
+    <!-- Course Grid -->
+    <div class="course-list">
+      <div class="course-card">
+        <h3>💻 JavaScript</h3>
+        <p>Learn the fundamentals of JavaScript, the language of the web. Build interactive websites and dynamic applications.</p>
+      </div>
+      <div class="course-card">
+        <h3>🎨 CSS</h3>
+        <p>Master styling and layouts with CSS. Create visually stunning, responsive designs for modern web applications.</p>
+      </div>
+      <div class="course-card">
+        <h3>🌐 HTML</h3>
+        <p>Understand the building blocks of the web with HTML. Learn how to structure content and create accessible pages.</p>
+      </div>
+      <div class="course-card">
+        <h3>📊 Business Administration</h3>
+        <p>Develop leadership, management, and organizational skills to thrive in today’s competitive business environment.</p>
+      </div>
+      <div class="course-card">
+        <h3>⚙️ Engineering</h3>
+        <p>Explore innovative engineering concepts and gain hands-on experience in solving real-world technical challenges.</p>
+      </div>
+      <div class="course-card">
+        <h3>🎭 Arts & Humanities</h3>
+        <p>Engage with culture, history, and creativity. Build critical thinking and communication skills through the arts.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Right Sidebar -->
+<div id="right-sidebar">
+  <section>
+    <h2>Navigation</h2>
+    <ul class="nav">
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="about.html">📖 About Us</a></li>
+      <li><a href="courses.html">🎓 Courses</a></li>
+      <li><a href="admissions.html" class="active">📝 Admissions</a></li>
+      <li><a href="contact.html">📞 Contact</a></li>
+    </ul>
+  </section>
+  <section>
+    <h2>Featured Courses</h2>
+    <ul class="courses">
+      <li><a href="course-javascript.html">JavaScript</a></li>
+      <li><a href="course-css.html">CSS</a></li>
+      <li><a href="course-html.html">HTML</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Upcoming Events</h2>
+    <p>🎉 Orientation Week – Sept 5</p>
+    <p>📚 Guest Lecture – Sept 12</p>
+  </section>
+
+  <section>
+    <h2>Stay Connected</h2>
+    <p>
+      <a href="#">🌐 Facebook</a><br>
+      <a href="#">🐦 Twitter</a><br>
+      <a href="#">📸 Instagram</a>
+    </p>
+  </section>
+</div>
+
+</body>
+</html>
